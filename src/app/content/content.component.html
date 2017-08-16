@@ -1,0 +1,27 @@
+<div>
+<h3>Content Component</h3>
+<h4>This author is {{author}}</h4>
+<ul>
+	<li *ngFor = "let student of students">{{student.name}} favorite color is {{student.favColor}} favorite number is {{student.favNumber}}</li> 
+
+	<!--*ngFor takes the create a variable called name and set to each instance of students and for each student, put the value of the array into the variable name and place into the tag.-->
+
+</ul>
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Color</th>
+		<th>Number</th>
+	</tr>
+	<tr *ngFor = "let student of students">
+		<td>{{student.name}}</td>
+		<td>{{student.favColor}}</td> 
+		<td>{{student.favNumber}}</td>
+	</tr> 
+
+	<!--*ngFor takes the create a variable called name and set to each instance of students and for each student, put the value of the array into the variable name and place into the tag.-->
+
+
+
+</table>
+</div>
