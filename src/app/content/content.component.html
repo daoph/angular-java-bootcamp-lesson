@@ -14,14 +14,14 @@
 		<th>Number</th>
 	</tr>
 	<tr *ngFor = "let student of students">
-		<td>{{student.name}}</td>
+		<td (click)="getSelectedStudent(student)">{{student.name}}</td>
 		<td>{{student.favColor}}</td> 
 		<td>{{student.favNumber}}</td>
 	</tr> 
 
 	<!--*ngFor takes the create a variable called name and set to each instance of students and for each student, put the value of the array into the variable name and place into the tag.-->
 
-
-
+<button (click)="clickme()">Click me!</button>
+<button (click)="displaySelectedStudent()">Display Student</button>
 </table>
 </div>
